@@ -7,6 +7,10 @@ public class Main {
         System.out.println(Main.search(new int[]{1, 2, 3, 4}, 3));
         System.out.println(convert(6));
         System.out.println(giveMeSomething("Michael"));
+        System.out.println(reverse(false));
+        System.out.println(countWords("Hello my name is Michael Guadagni."));
+        System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 25));
+        System.out.println(getCount("Celebration"));
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
@@ -17,10 +21,10 @@ public class Main {
         return ++num;
     }
     //Algorithm 3
-    public static int search(int arr[], int item) {
-        for(int i = 0; i < arr.length; i++)
+    public static int search(int array[], int item) {
+        for(int i = 0; i < array.length; i++)
         {
-            if(arr[i]==item)
+            if(array[i]==item)
                 return i;
         }
         return -1;
@@ -32,5 +36,30 @@ public class Main {
     //Algorithm 5
     public static String giveMeSomething(String a) {
         return "something " + a;
+    }
+    //Algorithm 6
+    public static boolean reverse(boolean b) {
+        if (b == false) {
+            b = true;
+        } else {
+            b = false;
+        }
+        return b;
+    }
+    //Algorithm 7
+    public static int countWords(String s) {
+        return s.split(" ").length;
+    }
+    //Algorithm 8
+    public static boolean existsHigher(int[] arr, int n) {
+        if (arr.length == 0) return false;
+        for (int i : arr) {
+            if (i >= n) return true;
+        }
+        return false;
+    }
+    //Algorithm 9
+    public static int getCount(String str) {
+        return str.replaceAll("[^aeiouAEIOU]", "").length();
     }
 }
