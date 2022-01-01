@@ -11,6 +11,11 @@ public class Main {
         System.out.println(countWords("Hello my name is Michael Guadagni."));
         System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 25));
         System.out.println(getCount("Celebration"));
+        System.out.println(sum(3, 2));
+        System.out.println(isSameNum(2,2));
+        System.out.println(calcAge(10));
+        System.out.println(helloName("Gerald"));
+        System.out.println(reverse("Hello my name is Michael Guadagni."));
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
@@ -21,10 +26,10 @@ public class Main {
         return ++num;
     }
     //Algorithm 3
-    public static int search(int array[], int item) {
-        for(int i = 0; i < array.length; i++)
+    public static int search(int arr[], int item) {
+        for(int i = 0; i < arr.length; i++)
         {
-            if(array[i]==item)
+            if(arr[i]==item)
                 return i;
         }
         return -1;
@@ -39,7 +44,7 @@ public class Main {
     }
     //Algorithm 6
     public static boolean reverse(boolean b) {
-        if (b == false) {
+        if (!b) {
             b = true;
         } else {
             b = false;
@@ -48,6 +53,7 @@ public class Main {
     }
     //Algorithm 7
     public static int countWords(String s) {
+
         return s.split(" ").length;
     }
     //Algorithm 8
@@ -60,6 +66,31 @@ public class Main {
     }
     //Algorithm 9
     public static int getCount(String str) {
+
         return str.replaceAll("[^aeiouAEIOU]", "").length();
+    }
+    //Algorithm 10
+    public static int sum(int a, int b) {
+        return a+b;
+    }
+    //Algorithm 11
+    public static boolean isSameNum(int x, int y) {
+        return x == y;
+    }
+    //Algorithm 12
+    public static int calcAge(int age) {
+        return age * 365;
+    }
+    //Algorithm 13
+    public static String helloName(String name) {
+        return "Hello " + name + "!";
+    }
+    //Algorithm 14
+    public static String reverse(final String str) {
+        String reverseOrder = "";
+        for (int i = str.length()-1; i >= 0; --i) {
+            reverseOrder = reverseOrder + str.charAt(i);
+        }
+        return reverseOrder;
     }
 }
