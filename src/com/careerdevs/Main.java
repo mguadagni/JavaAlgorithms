@@ -44,12 +44,7 @@ public class Main {
     }
     //Algorithm 6
     public static boolean reverse(boolean b) {
-        if (!b) {
-            b = true;
-        } else {
-            b = false;
-        }
-        return b;
+        return !b;
     }
     //Algorithm 7
     public static int countWords(String s) {
@@ -89,7 +84,7 @@ public class Main {
     public static String reverse(final String str) {
         String reverseOrder = "";
         for (int i = str.length()-1; i >= 0; --i) {
-            reverseOrder = reverseOrder + str.charAt(i);
+            reverseOrder += str.charAt(i);
         }
         return reverseOrder;
     }
