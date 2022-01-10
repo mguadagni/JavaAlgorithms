@@ -16,12 +16,14 @@ public class Main {
         System.out.println(calcAge(10));
         System.out.println(helloName("Gerald"));
         System.out.println(reverse("Hello my name is Michael Guadagni."));
+        System.out.println(makesTen(1,9));
+        System.out.println(numberSyllables("buf-fet"));
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
         return arr[0];
     }
-    //ALgorithm 2
+    //Algorithm 2
     public static int addition(int num) {
         return ++num;
     }
@@ -88,4 +90,18 @@ public class Main {
         }
         return reverseOrder;
     }
+    //Algorithm 15
+    public static boolean makesTen(int a, int b) {
+        if (a + b == 10 || a ==10 || b == 10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    //Algorithm 16
+    public static int numberSyllables(String word) {
+        return word.split("-").length;
+    }
+    //Algorithm 17
+
 }
