@@ -18,6 +18,8 @@ public class Main {
         System.out.println(reverse("Hello my name is Michael Guadagni."));
         System.out.println(makesTen(1,9));
         System.out.println(numberSyllables("buf-fet"));
+        System.out.println(match("hello", "hELLo"));
+        System.out.println(hackerSpeak("javascript is cool"));
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
@@ -103,5 +105,11 @@ public class Main {
         return word.split("-").length;
     }
     //Algorithm 17
-
+    public static boolean match(String str1, String str2) {
+        return str1.toLowerCase().equals(str2.toLowerCase());
+    }
+    //Algorithm 18
+    public static String hackerSpeak(String str) {
+        return str.replaceAll("s", "5").replaceAll("o","0").replaceAll("e", "3").replaceAll("i", "1").replaceAll("a", "4");
+    }
 }
