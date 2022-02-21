@@ -1,4 +1,7 @@
 package com.careerdevs;
+
+import java.util.Arrays;
+
 //hello
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +23,8 @@ public class Main {
         System.out.println(numberSyllables("buf-fet"));
         System.out.println(match("hello", "hELLo"));
         System.out.println(hackerSpeak("javascript is cool"));
+        System.out.println(basketballPoints(5,2));
+        System.out.println(Arrays.toString(minMax(new double[]{251, 23, 6543, 12})));
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
@@ -111,5 +116,14 @@ public class Main {
     //Algorithm 18
     public static String hackerSpeak(String str) {
         return str.replaceAll("s", "5").replaceAll("o","0").replaceAll("e", "3").replaceAll("i", "1").replaceAll("a", "4");
+    }
+
+    public static int basketballPoints(int twos, int threes) {
+        return ((twos * 2) + (threes * 3));
+    }
+
+    public static double[] minMax(double[] arr) {
+        Arrays.sort(arr);
+        return new double[] {arr[0], arr[arr.length-1]};
     }
 }
