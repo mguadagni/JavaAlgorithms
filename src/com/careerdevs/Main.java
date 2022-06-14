@@ -1,5 +1,7 @@
 package com.careerdevs;
 
+import com.careerdevs.algorithms.JavaOutputFormatting;
+
 import java.util.Arrays;
 
 public class Main {
@@ -24,6 +26,7 @@ public class Main {
         System.out.println(hackerSpeak("javascript is cool"));
         System.out.println(basketballPoints(5,2));
         System.out.println(Arrays.toString(minMax(new double[]{251, 23, 6543, 12})));
+        JavaOutputFormatting.run();
     }
     //Algorithm 1
     public static int getFirstValue(int[] arr) {
