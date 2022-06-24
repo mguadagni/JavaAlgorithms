@@ -1,5 +1,6 @@
 package com.careerdevs;
 
+import com.careerdevs.algorithms.JavaDatatypes;
 import com.careerdevs.algorithms.JavaLoopsII;
 import com.careerdevs.algorithms.JavaOutputFormatting;
 
@@ -28,7 +29,8 @@ public class Main {
 //        System.out.println(basketballPoints(5,2));
 //        System.out.println(Arrays.toString(minMax(new double[]{251, 23, 6543, 12})));
 //        JavaOutputFormatting.run();
-        JavaLoopsII.run();
+//        JavaLoopsII.run();
+        JavaDatatypes.run();
     }
 
     //Algorithm 1
