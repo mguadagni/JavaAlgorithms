@@ -8,10 +8,16 @@ public class JavaLoopsII {
 
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
+        StringBuilder sb = new StringBuilder();
         for(int i=0;i<t;i++){
             int a = scan.nextInt();
             int b = scan.nextInt();
             int n = scan.nextInt();
+            sb.setLength(0);
+            for(int j=0; j<n; ++j) {
+                sb.append((int) (a + b*(Math.pow(2, j+1) - 1))).append(" ");
+            }
+            System.out.println(sb.toString());
         }
         scan.close();
 
@@ -21,7 +27,7 @@ public class JavaLoopsII {
 
 
 
-//FROM HACKERRANK
+//STARTING CODE FROM HACKERRANK
 /*
 import java.util.*;
         import java.io.*;
@@ -34,7 +40,6 @@ class Solution{
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
-            for (int i)
         }
         in.close();
     }
