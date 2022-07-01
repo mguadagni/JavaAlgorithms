@@ -1,6 +1,7 @@
 package com.careerdevs;
 
 import com.careerdevs.algorithms.JavaDatatypes;
+import com.careerdevs.algorithms.JavaEndOfFile;
 import com.careerdevs.algorithms.JavaLoopsII;
 import com.careerdevs.algorithms.JavaOutputFormatting;
 
@@ -30,7 +31,8 @@ public class Main {
 //        System.out.println(Arrays.toString(minMax(new double[]{251, 23, 6543, 12})));
 //        JavaOutputFormatting.run();
 //        JavaLoopsII.run();
-        JavaDatatypes.run();
+//        JavaDatatypes.run();
+        JavaEndOfFile.run();
     }
 
     //Algorithm 1
