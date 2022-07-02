@@ -1,9 +1,6 @@
 package com.careerdevs;
 
-import com.careerdevs.algorithms.JavaDatatypes;
-import com.careerdevs.algorithms.JavaEndOfFile;
-import com.careerdevs.algorithms.JavaLoopsII;
-import com.careerdevs.algorithms.JavaOutputFormatting;
+import com.careerdevs.algorithms.*;
 
 import java.util.Arrays;
 
@@ -32,7 +29,8 @@ public class Main {
 //        JavaOutputFormatting.run();
 //        JavaLoopsII.run();
 //        JavaDatatypes.run();
-        JavaEndOfFile.run();
+//        JavaEndOfFile.run();
+        JavaStaticInitializerBlock.run();
     }
 
     //Algorithm 1
